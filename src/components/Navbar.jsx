@@ -9,7 +9,7 @@ function Navbar(){
 
             <nav>
                 <ul className="logo">
-                    <img src={Logo} alt="logo" width={120} />
+                    <img src={Logo} alt="logo" width={140} />
                 </ul>
                 <ul>
                     <li>

@@ -1,31 +1,32 @@
 $dark: #000000;
-$light-black: #21243D;
+$light-black: #21243d;
 $light: #ffffff;
-$dark-White: #EDF7FA; 
-$primary : #FF6464;
-$secondary: #00A8CC;
+$dark-White: #edf7fa;
+$primary: #ff6464;
+$secondary: #1e53a3;
+$green: #98db02;
+$purple: #6f3bc4;
 $transparent: rgba(0, 0, 0, 0.276);
 
 @mixin flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @mixin button {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    font-weight: 600;
-    color: $light;
-    background-color: $primary;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 3px 3px 20px $transparent;
-    transition: all 300ms ease;
-    &:hover{
-        box-shadow: none;
-    }
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: $light;
+  background-color: $secondary;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px $transparent;
+  transition: all 300ms ease;
+  &:hover {
+    box-shadow: none;
+  }
 }
-

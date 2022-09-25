@@ -1,34 +1,66 @@
 @import "../styles/Properties.scss";
 
-.about{
-    margin: 20px 60px;
+.about {
+  margin: 20px 60px;
+  text-align: center;
+  flex-direction: column;
+  h1 {
     text-align: center;
-    h1{
-        text-align: center;
-    }
-    .box-container{
-        @include flex;
-        margin: 60px;
-        .box{
-            @include flex;
-            width: 250px;
-            flex-direction: column;
-            .icon{
-                font-size: 50px;
-                padding: 30px;
-                color: $light;
-                margin-bottom: 10px;
-                background-color : $secondary;
-                border-radius: 50%;
-            }
-            .icon-name{
-                font-weight: 800;
-            }
-            p{
-                text-align: center;
-                padding: 0px 10px;
-            }
+  }
 
-        }
+  .box-container {
+    @include flex;
+    margin: 60px;
+    flex-direction: row;
+    .container-left,
+    .container-right {
+      @include flex;
     }
+    .box {
+      @include flex;
+      width: 250px;
+      flex-direction: column;
+
+      .icon {
+        font-size: 50px;
+        padding: 30px;
+        color: $light;
+        margin-bottom: 10px;
+        // background-color: $purple;
+        background: radial-gradient(#6f3bc4, #8c5ed7, #a791cb);
+        border-radius: 50%;
+        box-shadow: 3px 3px 20px $transparent;
+      }
+      .icon-name {
+        font-weight: 800;
+      }
+      p {
+        text-align: center;
+        padding: 0px 10px;
+      }
+    }
+  }
+  .skills {
+    @include flex;
+    .left {
+      width: 30%;
+    }
+    .right {
+      @include flex;
+      flex-direction: column;
+      margin: 20px;
+
+      .progress {
+        width: 400px;
+        height: 30px;
+        background-color: $green;
+        margin: 10px;
+        text-align: left;
+        @include flex;
+        justify-content: left;
+        padding-left: 10px;
+        color: $light;
+      }
+    }
+  }
 }
