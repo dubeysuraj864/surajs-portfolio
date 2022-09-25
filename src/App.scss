@@ -1,0 +1,7 @@
+@import "./styles/Properties.scss";
+
+.App{
+  // background-image: url("./assets/background.jpg");
+  @include flex;
+  justify-content: center;
+}

@@ -1,0 +1,31 @@
+$dark: #000000;
+$light-black: #21243D;
+$light: #ffffff;
+$dark-White: #EDF7FA; 
+$primary : #FF6464;
+$secondary: #00A8CC;
+$transparent: rgba(0, 0, 0, 0.276);
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: $light;
+    background-color: $primary;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 20px $transparent;
+    transition: all 300ms ease;
+    &:hover{
+        box-shadow: none;
+    }
+}
+

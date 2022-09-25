@@ -1,0 +1,18 @@
+@import "../styles/Properties.scss";
+
+nav{
+ @include flex;
+    ul{
+        @include flex;
+
+        li{
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: $dark;
+        }
+    }
+}

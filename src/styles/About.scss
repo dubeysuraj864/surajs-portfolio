@@ -1,0 +1,10 @@
+@import "../styles/Properties.scss";
+
+.about{
+    h1{
+        text-align: center;
+    }
+    .box-container{
+        @include flex;
+    }
+}
