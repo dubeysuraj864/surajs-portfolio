@@ -1,16 +1,17 @@
 @import "../styles/Properties.scss";
 
 .about {
-  margin: 20px 60px;
+  margin: 50px 60px;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column;  
+  
   h1 {
     text-align: center;
   }
 
   .box-container {
     @include flex;
-    margin: 60px;
+    margin: 0px;
     flex-direction: row;
     .container-left,
     .container-right {
@@ -49,17 +50,18 @@
       @include flex;
       flex-direction: column;
       margin: 20px;
+      padding: 20px;    
 
       .progress {
         width: 400px;
         height: 30px;
-        background-color: $green;
         margin: 10px;
         text-align: left;
         @include flex;
+        background-color: $green;
+        color: $light;
         justify-content: left;
         padding-left: 10px;
-        color: $light;
       }
     }
   }

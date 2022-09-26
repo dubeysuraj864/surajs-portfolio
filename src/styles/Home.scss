@@ -1,33 +1,30 @@
 @import "../styles/Properties.scss";
 
-.home-main{
+.home-main {
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+  .home {
     @include flex;
-    flex-direction: column;
-align-items: center;
-    .home{
-   
-        @include flex;
-        text-align: center;
-        // padding: 0px 60px;
-        .left{
-          
-            padding: 20px 20px 0px 190px ;
-            text-align: left;
-            width: 50%;
-        }
-        .right{
-    
-            padding: 20px 190px 0px 20px ;
-            text-align: left;
-            width: 50%;
-            h1{
-                line-height: 25px;
-            }
-            button{
-                @include button;
-    
-            }
-        }
-    
+    .left {
+      padding: 20px 20px 0px 200px;
+      text-align: left;
+      @include flex;
+      justify-content: right;
+      
+
     }
+    .right {
+     p{
+        padding: 0px 190px 0px 0px;
+     }
+      text-align: left;
+      h1 {
+        line-height: 25px;
+      }
+      button {
+        @include button;
+      }
+    }
+  }
 }

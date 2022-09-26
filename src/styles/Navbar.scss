@@ -2,11 +2,8 @@
 
 nav{
  @include flex;
- background: linear-gradient(to right, $secondary, $secondary);
- color: $light;
  padding: 0;
- margin: 20px auto;
- width: 70vw;
+ margin-top: 20px;
  border-radius: 50px;
     ul{
         @include flex;
@@ -14,12 +11,19 @@ nav{
 
         li{
             list-style: none;
-            margin: 5px;
-            padding: 0px 10px;
+            // margin: 5px;
         }
         a{
             text-decoration: none;
-            color: $light;
+            color: $dark;
+            padding: 10px 20px;
+
+            transition: all 300ms ease;
+            &:hover{
+                background-color: $secondary;
+                color: $light;
+                
+            }
         }
     }
 }
