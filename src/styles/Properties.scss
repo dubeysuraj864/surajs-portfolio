@@ -15,6 +15,7 @@ $transparent: rgba(0, 0, 0, 0.276);
   align-items: center;
 }
 
+
 @mixin grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

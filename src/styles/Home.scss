@@ -13,7 +13,7 @@
       justify-content: right;
       
 
-    }
+    } 
     .right {
      p{
         padding: 0px 190px 0px 0px;
@@ -24,6 +24,57 @@
       }
       button {
         @include button;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-main {
+    .about, .project, .contact{
+      margin: 0;
+      padding: 0;
+      width: 80vw;
+
+    }
+    @include flex;
+    flex-direction: column;
+    align-items: center;
+    .home {
+      @include flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80vw;
+      .left {
+        width: 80vw;
+        padding: 0px;
+        text-align: left;
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+          width: 80vw;
+          margin: 40px 0px;
+          padding: 0;
+        }
+        
+  
+      }
+      .right {
+        width: 80vw;
+       p{
+          padding: 0px;
+       }
+        text-align: center;
+        h1 {
+          font-size: 30px;
+          line-height: 35px;
+          margin: 0;
+          padding: 0;
+        }
+        button {
+          @include button;
+        }
       }
     }
   }

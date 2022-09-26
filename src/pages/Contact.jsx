@@ -1,3 +1,5 @@
+import "../styles/Contact.scss";
+
 function Contact(){
     return(
         <div className="contact">

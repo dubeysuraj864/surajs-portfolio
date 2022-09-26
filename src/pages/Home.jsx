@@ -23,9 +23,9 @@ function Home() {
           <button className="check-my-work">Check my Work</button>
         </div>
       </div>
-      <About />
-      <Project />
-      <Contact />
+      <About className="about" />
+      <Project className="project"/>
+      <Contact className="contact"/>
     </div>
   );
 }
