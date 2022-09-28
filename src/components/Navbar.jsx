@@ -7,13 +7,13 @@ function Navbar() {
     <div className="navbar">
       <nav>
         <input type="checkbox" id="toggle" />
-        <label htmlFor="toggle">
-          <span class="material-symbols-rounded">menu</span>
+        <label htmlFor="toggle" id="menu">
+          <span class="material-symbols-rounded burger" >menu</span>
         </label>
         <ul className="logo">
           <img src={Logo} alt="logo" width={140} />
         </ul>
-        <ul>
+        <ul className="navlinks">
           <li>
             <Link to="/">Home</Link>
           </li>

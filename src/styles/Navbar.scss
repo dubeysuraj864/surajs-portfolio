@@ -31,6 +31,7 @@ nav {
 }
 
 @media (max-width: 600px) {
+
   label{
     display: inline-block;
     color: $light;
@@ -41,6 +42,7 @@ nav {
     padding: 0;
   }
   nav {
+    position: relative;
     @include flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,9 +52,15 @@ nav {
     padding: 10px;
     .logo {
       margin: 0;
+      margin-left: 20px;
+      // width: 50px;
       padding: 0;
       img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
         margin: 0;
+        margin-right: 10px;
         padding: 0;
       }
     }
@@ -81,5 +89,41 @@ nav {
         }
       }
     }
+    #menu {
+      display: block;
+      font-size: 10px;
+    }
+    .burger {
+      font-size: 50px;
+      margin-left: 10px;
+    }
+    .navlinks {
+      display: none;
+      height: 0px;
+    }
+
+    #toggle:checked ~ .navlinks {
+      display: block;
+      position: absolute;
+      top: 6vh;
+      left: 0px;
+      width: 100%;
+      padding-top: 60px;
+      height: 30vh;
+      transform: translateY(0vh);
+      background-color: $secondary;
+      text-align: center;
+      border-radius: 0px 0px 30px 30px;
+      li {
+        padding: 15px 20px;
+        a {
+         text-transform: uppercase;
+          margin-right: auto;
+          font-size: 20px;
+          font-weight: 1000;
+        }
+      }
+    }
   }
+  
 }

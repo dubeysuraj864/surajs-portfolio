@@ -21,6 +21,7 @@ function Contact() {
             </div>
           <form>
             <img className="form-bg" src={bg} alt="" />
+            <h3>Write a message</h3>
             <div className="name-email">
            <div className="name-div">
            <label htmlFor="name">Your Name</label> <br />

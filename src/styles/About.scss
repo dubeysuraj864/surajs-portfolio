@@ -3,8 +3,8 @@
 .about {
   margin: 50px 60px;
   text-align: center;
-  flex-direction: column;  
-  
+  flex-direction: column;
+
   h1 {
     text-align: center;
   }
@@ -51,7 +51,7 @@
       @include flex;
       flex-direction: column;
       margin: 20px;
-      padding: 20px;    
+      padding: 20px;
 
       .progress {
         width: 400px;
@@ -59,7 +59,8 @@
         margin: 10px;
         text-align: left;
         @include flex;
-        background-color: $green;
+        // background: linear-gradient(to right, #98db02, #bdff2f);
+        background: radial-gradient(#6f3bc4, #8c5ed7, #a791cb);
         color: $light;
         justify-content: left;
         padding-left: 10px;
@@ -69,96 +70,92 @@
 }
 
 @media (max-width: 600px) {
- 
-.about {
-  margin: 50px 60px;
-  text-align: center;
-  flex-direction: column;  
-  
-  h1 {
+  .about {
+    margin: 50px 60px;
     text-align: center;
-  }
-
-  .box-container {
-    @include flex;
-    margin: 0px;
-    flex-direction: column-reverse;
-    justify-content: center;
-    .container-left,
-    .container-right {
-      @include flex;
-      flex-direction: column;
-    justify-content: center;
-    }
-    .box {
-      @include flex;
-      width: 250px;
-      flex-direction: column;
-      flex-direction: column;
-    justify-content: center;
-
-      .icon {
-        font-size: 50px;
-        padding: 30px;
-        color: $light;
-        margin-bottom: 10px;
-        // background-color: $purple;
-        background: radial-gradient(#6f3bc4, #8c5ed7, #a791cb);
-        border-radius: 50%;
-        box-shadow: 3px 3px 20px $transparent;
-      }
-      .icon-name {
-        font-weight: 800;
-      }
-      p {
-        text-align: center;
-        padding: 0px 10px;
-      }
-    }
-    img{
-      width: 80vw;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-
- .skills {
-  @include flex;
-  flex-direction: column;
-  justify-content: center;
-  .left {
-    width: 80vw;
-    img{
-      width: 80vw;
-      margin: 0;
-      padding: 0;
-
-    }
-  }
-  .right {
-    @include flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;    
 
-    .progress {
-     
+    h1 {
+      text-align: center;
+    }
+
+    .box-container {
       @include flex;
-      background-color: $green;
-      color: $light;
-      justify-content: left;
-      padding-left: 10px;
-      width: 80vw;
-      height: 40px;
-      border-radius: 20px;
-      margin:5px 0px;
+      margin: 0px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      .container-left,
+      .container-right {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .box {
+        @include flex;
+        width: 250px;
+        flex-direction: column;
+        justify-content: center;
+
+        .icon {
+          font-size: 50px;
+          padding: 30px;
+          color: $light;
+          margin-bottom: 10px;
+          // background-color: $purple;
+          background: radial-gradient(#6f3bc4, #8c5ed7, #a791cb);
+          border-radius: 50%;
+          box-shadow: 3px 3px 20px $transparent;
+        }
+        .icon-name {
+          font-weight: 800;
+        }
+        p {
+          text-align: center;
+          padding: 0px 10px;
+        }
+      }
+      img {
+        width: 80vw;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .skills {
+      @include flex;
       flex-direction: column;
       justify-content: center;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.382);
+      .left {
+        width: 80vw;
+        img {
+          width: 80vw;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .right {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px 0px;
+        padding: 20px;
+
+        .progress {
+          @include flex;
+          // background: linear-gradient(to right, #98db02, #00d6b9);
+          background: radial-gradient(#b63bc4, #8c5ed7, #a791cb);
+          color: $light;
+          justify-content: left;
+          padding-left: 10px;
+          width: 80vw;
+          height: 40px;
+          border-radius: 20px;
+          margin: 5px 0px;
+          flex-direction: column;
+          justify-content: center;
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.382);
+        }
+      }
     }
   }
-}
-}
 }

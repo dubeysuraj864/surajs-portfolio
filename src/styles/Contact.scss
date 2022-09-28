@@ -16,13 +16,18 @@
     }
   }
   .contact-bottom {
+ 
     @include flex;
-    text-align: center;
+    text-align: left;
+    h3{
+      text-align: left;
+    }
     form {
       @include flex;
       padding: 50px 30px;
       color: $secondary;
       font-weight: 600;
+      
 
       flex-direction: column;
       .name-email {
@@ -84,27 +89,39 @@
   .contact {
     margin: 0;
     padding: 0;
+    @include flex;
+    justify-content: center;
     flex-direction: column;
-    width: 80vw;
+
     .contact-container{
+        @include flex;
+        justify-content: center;
         flex-direction: column;
         .contact-top{
-            margin: 70px 10px;
+            margin: 30px 10px;
         }
         .contact-bottom{
             flex-direction: column;
+            width: 80vw;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            h3{
+              text-align: left;
+            }
             img{
                 width: 80vw;
             }
         form{
-            
-            // padding: 0;
            
             label{
                 color: $secondary;
             }
             input{
                 width: 60vw;
+            }
+            ::placeholder{
+                font-weight: normal;
             }
             img{
                 width: 80vw;
@@ -113,16 +130,30 @@
             }
         }
             .name-email{
+                
                 flex-direction: column;
              
             }
         .msg{
        
                 textarea{
+                    margin-top: 10px;
+                    padding: 0;
                     width: 60vw;
+                }
+                textarea::placeholder{
+                    font-weight: 600;
                 }
             
         }
+        .name-email{
+            .name-div,
+            .email-div {
+              margin: 10px;
+            }
+            margin-bottom: 20px;
+        }
+    
         }
 
     }

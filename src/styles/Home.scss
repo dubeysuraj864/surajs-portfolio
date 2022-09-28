@@ -58,6 +58,7 @@
         text-align: left;
         @include flex;
         flex-direction: column;
+        margin-left: 0%;
         justify-content: center;
         img {
           width: 80vw;
