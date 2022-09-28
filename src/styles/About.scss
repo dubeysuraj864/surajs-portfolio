@@ -82,7 +82,7 @@
   .box-container {
     @include flex;
     margin: 0px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     .container-left,
     .container-right {

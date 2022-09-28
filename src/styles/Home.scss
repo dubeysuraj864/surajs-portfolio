@@ -6,19 +6,25 @@
   align-items: center;
   .home {
     @include flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: left;
     .left {
-      padding: 20px 20px 0px 200px;
-      text-align: left;
+      margin-left: 10%;
+      width: 50%;
       @include flex;
-      justify-content: right;
-      
-
-    } 
+      justify-content: center;
+    }
     .right {
-     p{
-        padding: 0px 190px 0px 0px;
-     }
+      width: 50%;
+      // @include flex;
+      // flex-direction: column;
+      // justify-content: left;
       text-align: left;
+      p {
+        width: 340px;
+      }
+
       h1 {
         line-height: 25px;
       }
@@ -31,11 +37,12 @@
 
 @media (max-width: 600px) {
   .home-main {
-    .about, .project, .contact{
+    .about,
+    .project,
+    .contact {
       margin: 0;
       padding: 0;
       width: 80vw;
-
     }
     @include flex;
     flex-direction: column;
@@ -52,19 +59,17 @@
         @include flex;
         flex-direction: column;
         justify-content: center;
-        img{
+        img {
           width: 80vw;
           margin: 40px 0px;
           padding: 0;
         }
-        
-  
       }
       .right {
         width: 80vw;
-       p{
+        p {
           padding: 0px;
-       }
+        }
         text-align: center;
         h1 {
           font-size: 30px;

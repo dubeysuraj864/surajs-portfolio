@@ -1,15 +1,130 @@
 @import "../styles/Properties.scss";
 
-.contact{
-    margin: 0;
-    padding: 0;
-    
+.contact {
+  text-align: center;
+  margin: 40px 30px;
+  .contact-top {
+    word-wrap: break-word;
+
+    h1 {
+      color: $purple;
+      text-align: center;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .contact-bottom {
+    @include flex;
+    text-align: center;
+    form {
+      @include flex;
+      padding: 50px 30px;
+      color: $secondary;
+      font-weight: 600;
+
+      flex-direction: column;
+      .name-email {
+        @include clean;
+        text-align: left;
+        @include flex;
+        justify-content: center;
+        .name-div,
+        .email-div {
+          margin: 30px;
+        }
+
+        input {
+          @include clean;
+          border-bottom: 2px solid $secondary;
+          color: $secondary-text;
+          padding-bottom: 10px;
+          font-weight: 600;
+        }
+        ::placeholder {
+          color: $secondary-text;
+          font-weight: 600;
+        }
+      }
+      .msg {
+        text-align: left;
+        textarea {
+          @include clean;
+          width: 30vw;
+          border-bottom: 2px solid $secondary;
+          padding-bottom: 10px;
+          color: $secondary-text;
+          resize: none;
+          font-weight: 600;
+        }
+        ::placeholder {
+          color: $secondary-text;
+          font-weight: 600;
+        }
+      }
+      button{
+        @include button;
+        margin-top: 20px;
+      }
+      position: relative;
+      width: 50%;
+      img {
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
-@media (max-width: 600px){
-    .contact{
-        margin: 0;
-        padding: 0;
-        width: 80vw;
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    width: 80vw;
+    .contact-container{
+        flex-direction: column;
+        .contact-top{
+            margin: 70px 10px;
+        }
+        .contact-bottom{
+            flex-direction: column;
+            img{
+                width: 80vw;
+            }
+        form{
+            
+            // padding: 0;
+           
+            label{
+                color: $secondary;
+            }
+            input{
+                width: 60vw;
+            }
+            img{
+                width: 80vw;
+                height: 100vw;
+         
+            }
+        }
+            .name-email{
+                flex-direction: column;
+             
+            }
+        .msg{
+       
+                textarea{
+                    width: 60vw;
+                }
+            
+        }
+        }
+
     }
+  }
 }

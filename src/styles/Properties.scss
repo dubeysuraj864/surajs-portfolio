@@ -4,6 +4,7 @@ $light: #ffffff;
 $dark-white: #edf7fa;
 $primary: #ff6464;
 $secondary: #1e53a3;
+$secondary-text: #1e53a3c4; 
 $green: #98db02;
 $purple: #6f3bc4;
 $transparent: rgba(0, 0, 0, 0.276);
@@ -36,4 +37,12 @@ $transparent: rgba(0, 0, 0, 0.276);
     color: $secondary;
     border: 2px solid $secondary;
   }
+
+
+}
+@mixin clean{
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+
 }

@@ -7,7 +7,7 @@ function About() {
     <>
  
       <div className="about">
-      <h1>About</h1>
+     
         <div className="box-container">
           <div className="box-main-left">
             <div className="container-left">

@@ -9,11 +9,7 @@ import "../styles/Projects.scss";
 function Project() {
   return (
     <>
-
-    <div className="project-h1"><h1>Projects</h1> </div>
-  
       <div className="project">
-      
         <div className="image">
           <img src={Pizza} alt="pizza" width={300} />
         </div>
